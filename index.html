@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+     <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>4pixelMoon</title>
+          <meta name="description" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" type="text/css" href="/css/main.css">
+     </head>
+     <body>
+          <div id=wrapper>
+                    <div id=SOL>
+                         <div id=title>
+                                 <h1>If the moon were 4 pixels in diameter...</h1>
+                         </div>
+                         <div id=sun>
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1600" viewBox="0 0 1600 1600">
+                                   <defs>
+                                     <filter id="Sun">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="49.5" result="blur"/>
+                                       <feFlood flood-color="#816d00" flood-opacity="0.588" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Sun-2" data-name="Sun" cx="800" cy="800" r="800" fill="#edde2e"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Sun)">
+                                       <circle id="Sun-3" data-name="Sun" cx="800" cy="800" r="800" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>  
+                                 <h1>Sun</h1>    
+                         </div>
+                         <div id=mercury>
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="6" viewBox="0 0 6 6">
+                                   <defs>
+                                     <filter id="Mercury">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#414141" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Mercury-2" data-name="Mercury" cx="3" cy="3" r="3" fill="#fff"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Mercury)">
+                                       <circle id="Mercury-3" data-name="Mercury" cx="3" cy="3" r="3" fill="#fff"/>
+                                     </g>
+                                   </g>
+                              </svg>
+                              <h1>Mercury</h1>
+                         </div>
+                    </div>
+          </div>
+     </body>
+</html>
+
+
+

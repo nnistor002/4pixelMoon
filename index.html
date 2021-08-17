@@ -8,14 +8,48 @@
           <meta name="description" content="">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <link rel="stylesheet" type="text/css" href="/css/main.css">
-          <script src=/js/scrollController.js></script>
+          <script src=/js/ActionController.js></script>
      </head>
      <body>
+      <div id=articleContainer>
+        <button type="button" id=articleContainerBTN onclick="close_BTN()"></button>
+        <div id=moonArticle>
+          <h1>THE MOON</h1>
+        </div>
+        <div id=mercuryArticle>
+          <h1>MERCURY</h1>
+        </div>
+        <div id=marsArticle>
+          <h1>MARS</h1>
+        </div>
+        <div id=venusArticle>
+          <h1>VENUS</h1>
+        </div>
+        <div id=earthArticle>
+          <h1>EARTH</h1>
+        </div>
+        <div id=neptuneArticle>
+          <h1>NEPTUNE</h1>
+        </div>
+        <div id=uranusArticle>
+          <h1>URANUS</h1>
+        </div>
+        <div id=saturnArticle>
+          <h1>SATURN</h1>
+        </div>
+        <div id=jupiterArticle>
+          <h1>JUPITER</h1>
+        </div>
+        <div id=sunArticle>
+          <h1>THE SUN</h1>
+        </div>
+      </button>
+      </div>
           <div id=wrapper>
                <div id=title>
                     <h1>If the moon were 4 pixels in diameter...</h1>
                     <hr>
-            </div>
+              </div>
                     <div id=SOL>  
                          <button type="button" id=moon_div onclick="moon_BTN()">
                               <svg id=moonSVG xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="4" viewBox="0 0 4 4">
@@ -40,7 +74,7 @@
                                  <h2>Ø 4px</h2>                           
                          </button>
                          
-                         <button type="button" id=mercury_div>
+                         <button type="button" id=mercury_div onclick="mercury_BTN()">
                               <svg id=mercurySVG xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="6" viewBox="0 0 6 6">
                                    <defs>
                                      <filter id="Mercury">
@@ -63,7 +97,7 @@
                               <h2>Ø 6px</h2>   
                          </button>
 
-                         <button type="button" id=mars_div>
+                         <button type="button" id=mars_div onclick="mars_BTN()">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="8" viewBox="0 0 8 8">
                                    <defs>
                                      <filter id="Mars" x="0" y="0" width="8" height="8" filterUnits="userSpaceOnUse">
@@ -86,7 +120,7 @@
                                  <h2>Ø 8px</h2>                                  
                          </button>
 
-                         <button type="button" id=venus_div>
+                         <button type="button" id=venus_div onclick="venus_BTN()">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
                                    <defs>
                                      <filter id="Venus">
@@ -110,7 +144,7 @@
                          </button>
 
 
-                         <button type="button" id=earth_div>
+                         <button type="button" id=earth_div onclick="earth_BTN()">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
                                    <defs>
                                      <filter id="Earth">
@@ -133,7 +167,7 @@
                                  <h2>Ø 15px</h2>                              
                          </button>
 
-                         <button type="button" id=neptune_div>
+                         <button type="button" id=neptune_div onclick="neptune_BTN()">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
                                    <defs>
                                      <filter id="Neptune">
@@ -156,7 +190,7 @@
                                  <h2>Ø 57px</h2>                                   
                          </button>
 
-                         <button type="button" id=uranus_div>
+                         <button type="button" id=uranus_div onclick="uranus_BTN()">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
                                    <defs>
                                      <filter id="Uranus">
@@ -179,7 +213,7 @@
                                  <h2>Ø 58px</h2>                                  
                          </button>
 
-                         <button type="button" id=saturn_div>
+                         <button type="button" id=saturn_div onclick="saturn_BTN()">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="134" viewBox="0 0 134 134">
                                    <defs>
                                      <filter id="Saturn">
@@ -202,7 +236,7 @@
                                  <h2>Ø 134px</h2>                            
                          </button>
 
-                         <button type="button" id=jupiter_div>
+                         <button type="button" id=jupiter_div onclick="jupiter_BTN()">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="161" height="161" viewBox="0 0 161 161">
                                    <defs>
                                      <filter id="Jupiter">
@@ -226,7 +260,7 @@
                          </button>
                     </div>
                     <div id=sunAlone>
-                         <button type="button" id=sun_div>
+                         <button type="button" id=sun_div onclick="sun_BTN()">
                               <h1>Sun</h1>
                               <h2>Ø 1600px</h2>
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1600" viewBox="0 0 1600 1600">
@@ -250,8 +284,6 @@
                          </button>
                     </div>
           </div>
-          <div id=nn>
-               <h3>By: Natanael Nistor</h3>
           </div>
      </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html>
      <head>
           <meta charset="utf-8">
@@ -8,36 +9,124 @@
           <meta name="description" content="">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <link rel="stylesheet" type="text/css" href="/css/main.css">
+          <script src=/js/ActionController.js></script>
      </head>
      <body>
+      <div id=articleContainer>
+        <button type="button" id=articleContainerBTN onclick="close_BTN()"></button>
+        <div id=moonArticle>
+          <h1>THE MOON</h1>
+          <div id="moon_video">
+            <video id="moon_v" width="1500" height="900" loop>
+              <source src="/video/Moon_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=mercuryArticle>
+          <h1>MERCURY</h1>
+          <div id="mercury_video">
+            <video id="mercury_v" width="1500" height="900" loop>
+              <source src="/video/Mercury_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=marsArticle>
+          <h1>MARS</h1>
+          <div id="mars_video">
+            <video id="mars_v" width="1500" height="900" loop>
+              <source src="/video/Mars_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=venusArticle>
+          <h1>VENUS</h1>
+          <div id="venus_video">
+            <video id="venus_v" width="1500" height="900" loop>
+              <source src="/video/Venus_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=earthArticle>
+          <h1>EARTH</h1>
+          <div id="earth_video">
+            <video id="earth_v" width="1500" height="900" loop>
+              <source src="/video/Earth_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=neptuneArticle>
+          <h1>NEPTUNE</h1>
+          <div id="neptune_video">
+            <video id="neptune_v" width="1500" height="900" loop>
+              <source src="/video/Neptune_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=uranusArticle>
+          <h1>URANUS</h1>
+          <div id="uranus_video">
+            <video id="uranus_v" width="1500" height="900" loop>
+              <source src="/video/uranus_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=saturnArticle>
+          <h1>SATURN</h1>
+          <div id="saturn_video">
+            <video id="saturn_v" width="1500" height="900" loop>
+              <source src="/video/Saturn_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=jupiterArticle>
+          <h1>JUPITER</h1>
+          <div id="jupiter_video">
+            <video id="jupiter_v" width="1500" height="900" loop>
+              <source src="/video/Jupiter_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div id=sunArticle>
+          <h1>THE SUN</h1>
+          <div id="sun_video">
+            <video id="sun_v" width="1500" height="900" loop>
+              <source src="/video/Sun_Render0001-6284.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </button>
+      </div>
           <div id=wrapper>
-                    <div id=SOL>
-                         <div id=title>
-                                 <h1>If the moon were 4 pixels in diameter...</h1>
-                         </div>
-                         <div id=sun>
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1600" viewBox="0 0 1600 1600">
+               <div id=title>
+                    <h1>If the moon were 4 pixels in diameter...</h1>
+                    <hr>
+              </div>
+                    <div id=SOL>  
+                         <button type="button" id=moon_div onclick="moon_BTN()">
+                              <svg id=moonSVG xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="4" viewBox="0 0 4 4">
                                    <defs>
-                                     <filter id="Sun">
+                                     <filter id="Moon">
                                        <feOffset input="SourceAlpha"/>
-                                       <feGaussianBlur stdDeviation="49.5" result="blur"/>
-                                       <feFlood flood-color="#816d00" flood-opacity="0.588" result="color"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#333" flood-opacity="0.988" result="color"/>
                                        <feComposite operator="out" in="SourceGraphic" in2="blur"/>
                                        <feComposite operator="in" in="color"/>
                                        <feComposite operator="in" in2="SourceGraphic"/>
                                      </filter>
                                    </defs>
                                    <g data-type="innerShadowGroup">
-                                     <circle id="Sun-2" data-name="Sun" cx="800" cy="800" r="800" fill="#edde2e"/>
-                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Sun)">
-                                       <circle id="Sun-3" data-name="Sun" cx="800" cy="800" r="800" fill="#fff"/>
+                                     <circle id="Moon-2" data-name="Moon" cx="2" cy="2" r="2" fill="#fff"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Moon)">
+                                       <circle id="Moon-3" data-name="Moon" cx="2" cy="2" r="2" fill="#fff"/>
                                      </g>
                                    </g>
-                                 </svg>  
-                                 <h1>Sun</h1>    
-                         </div>
-                         <div id=mercury>
-                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="6" viewBox="0 0 6 6">
+                                 </svg>
+                                 <h1>Moon</h1>
+                                 <h2>Ø 4px</h2>                           
+                         </button>
+                         
+                         <button type="button" id=mercury_div onclick="mercury_BTN()">
+                              <svg id=mercurySVG xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="6" viewBox="0 0 6 6">
                                    <defs>
                                      <filter id="Mercury">
                                        <feOffset input="SourceAlpha"/>
@@ -56,11 +145,197 @@
                                    </g>
                               </svg>
                               <h1>Mercury</h1>
-                         </div>
+                              <h2>Ø 6px</h2>   
+                         </button>
+
+                         <button type="button" id=mars_div onclick="mars_BTN()">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="8" viewBox="0 0 8 8">
+                                   <defs>
+                                     <filter id="Mars" x="0" y="0" width="8" height="8" filterUnits="userSpaceOnUse">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="1" result="blur"/>
+                                       <feFlood flood-color="#a7582e" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Mars-2" data-name="Mars" cx="4" cy="4" r="4" fill="#be1507"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Mars)">
+                                       <circle id="Mars-3" data-name="Mars" cx="4" cy="4" r="4" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>                                 
+                                 <h1>Mars</h1>
+                                 <h2>Ø 8px</h2>                                  
+                         </button>
+
+                         <button type="button" id=venus_div onclick="venus_BTN()">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                   <defs>
+                                     <filter id="Venus">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#8b8b8b" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Venus-2" data-name="Venus" cx="7" cy="7" r="7" fill="#c18500"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Venus)">
+                                       <circle id="Venus-3" data-name="Venus" cx="7" cy="7" r="7" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>
+                                 <h1>Venus</h1>
+                                 <h2>Ø 14px</h2>                                 
+                         </button>
+
+
+                         <button type="button" id=earth_div onclick="earth_BTN()">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
+                                   <defs>
+                                     <filter id="Earth">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#989898" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Earth-2" data-name="Earth" cx="7.5" cy="7.5" r="7.5" fill="#146aaa"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Earth)">
+                                       <circle id="Earth-3" data-name="Earth" cx="7.5" cy="7.5" r="7.5" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>                                 
+                                 <h1>Earth</h1>
+                                 <h2>Ø 15px</h2>                              
+                         </button>
+
+                         <button type="button" id=neptune_div onclick="neptune_BTN()">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+                                   <defs>
+                                     <filter id="Neptune">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#001441" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Neptune-2" data-name="Neptune" cx="28.5" cy="28.5" r="28.5" fill="#00589a"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Neptune)">
+                                       <circle id="Neptune-3" data-name="Neptune" cx="28.5" cy="28.5" r="28.5" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>
+                                 <h1>Neptune </h1>
+                                 <h2>Ø 57px</h2>                                   
+                         </button>
+
+                         <button type="button" id=uranus_div onclick="uranus_BTN()">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+                                   <defs>
+                                     <filter id="Uranus">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#001441" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Uranus-2" data-name="Uranus" cx="29" cy="29" r="29" fill="#a3c3db"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Uranus)">
+                                       <circle id="Uranus-3" data-name="Uranus" cx="29" cy="29" r="29" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>                                
+                                 <h1>Uranus</h1>
+                                 <h2>Ø 58px</h2>                                  
+                         </button>
+
+                         <button type="button" id=saturn_div onclick="saturn_BTN()">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="134" viewBox="0 0 134 134">
+                                   <defs>
+                                     <filter id="Saturn">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#979ba2" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Saturn-2" data-name="Saturn" cx="67" cy="67" r="67" fill="#e6d89a"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Saturn)">
+                                       <circle id="Saturn-3" data-name="Saturn" cx="67" cy="67" r="67" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>
+                                 <h1>Saturn</h1>     
+                                 <h2>Ø 134px</h2>                            
+                         </button>
+
+                         <button type="button" id=jupiter_div onclick="jupiter_BTN()">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="161" height="161" viewBox="0 0 161 161">
+                                   <defs>
+                                     <filter id="Jupiter">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                                       <feFlood flood-color="#fff" flood-opacity="0.988" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Jupiter-2" data-name="Jupiter" cx="80.5" cy="80.5" r="80.5" fill="#a08655"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Jupiter)">
+                                       <circle id="Jupiter-3" data-name="Jupiter" cx="80.5" cy="80.5" r="80.5" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>
+                                 <h1>Jupiter</h1>           
+                                 <h2>Ø 161px</h2>                      
+                         </button>
                     </div>
+                    <div id=sunAlone>
+                         <button type="button" id=sun_div onclick="sun_BTN()">
+                              <h1>Sun</h1>
+                              <h2>Ø 1600px</h2>
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1600" viewBox="0 0 1600 1600">
+                                   <defs>
+                                     <filter id="Sun">
+                                       <feOffset input="SourceAlpha"/>
+                                       <feGaussianBlur stdDeviation="49.5" result="blur"/>
+                                       <feFlood flood-color="#816d00" flood-opacity="0.588" result="color"/>
+                                       <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+                                       <feComposite operator="in" in="color"/>
+                                       <feComposite operator="in" in2="SourceGraphic"/>
+                                     </filter>
+                                   </defs>
+                                   <g data-type="innerShadowGroup">
+                                     <circle id="Sun-2" data-name="Sun" cx="800" cy="800" r="800" fill="#edde2e"/>
+                                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Sun)">
+                                       <circle id="Sun-3" data-name="Sun" cx="800" cy="800" r="800" fill="#fff"/>
+                                     </g>
+                                   </g>
+                                 </svg>
+                         </button>
+                    </div>
+          </div>
           </div>
      </body>
 </html>
-
-
 

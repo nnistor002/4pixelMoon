@@ -383,7 +383,11 @@ button:hover{
 }
 
 
-
+#bottom_info{
+     text-align: center;
+     color: white;
+     margin: auto;
+}
 
 
 

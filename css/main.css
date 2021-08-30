@@ -1,556 +1,920 @@
-html{
-     width: 100%;
-     overflow-x: hidden;
+html {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-body{
-     position: relative;
-     margin: auto;
-     height: auto;
-     width: 100%;
-     background-color: black;
-     overflow-x: hidden;
+body {
+  position: relative;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
 }
 
-
-h1,h2{
-     color: white;
-     text-align: center;
+h1,
+h2 {
+  color: white;
+  text-align: center;
 }
 
-button{
-     background-color: rgba(0, 0, 0, 0);
-     border: none
-     ;
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 
-button:hover{
-     border: 2px dashed rgba(255, 255, 255, 0.324);
-     border-radius: 50px;
+button:hover {
+  border: 2px dashed rgba(255, 255, 255, 0.324);
+  border-radius: 50px;
 }
-
 
 #wrapper {
-     margin: auto;
-     width: 100%;
-     background-color: rgb(0, 0, 0);
+  margin: auto;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
 }
 
 #SOL {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     margin: auto;
-     text-align: center;
-     align-items: center;
-     padding-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding-top: 150px;
 }
 
-#title{
-     margin: auto;
-     text-align: center;
-     font-size: larger;
-     font-style: bold;
-     color: rgb(255, 255, 255);
-     padding-top: 10px;
-     padding-bottom: 100px;
-     height: 1px;
-     width: 75%;
+#title {
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  font-style: bold;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 100px;
+  height: 1px;
+  width: 75%;
 }
 
 #moon_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 200px;
-     width: 200px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  width: 200px;
 }
 
 #mercury_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 200px;
-     width: 200px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  width: 200px;
 }
 
 #venus_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 200px;
-     width: 200px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  width: 200px;
 }
 
 #earth_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 200px;
-     width: 200px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  width: 200px;
 }
 
 #mars_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 200px;
-     width: 200px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  width: 200px;
 }
 
 #jupiter_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 300px;
-     width: 300px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 300px;
+  width: 300px;
 }
 
 #saturn_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 300px;
-     width: 300px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 300px;
+  width: 300px;
 }
 
 #uranus_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 225px;
-     width: 225px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 225px;
+  width: 225px;
 }
 
 #neptune_div {
-     margin: auto;
-     text-align: center;
-     align-content: center;
-     height: 225px;
-     width: 225px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  height: 225px;
+  width: 225px;
 }
 
-#sunAlone{
-     display: flex;
-     justify-content: center;
-     margin: auto;
-     width: 100%;
+#sunAlone {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
 }
 
 #sun_div {
-     margin: auto;
-     height: 1800px;
-     width: 1800px;
+  margin: auto;
+  height: 1800px;
+  width: 1800px;
 }
 
-#nn{
-     position: relative;
-     text-align: center;
-     margin: auto;
-     color: red;
-     padding-top: 20px;
+#nn {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
 }
 
-#articleContainer{
-     visibility: hidden;
-     position: fixed;
-     top: 0;
-     left: 0;
-     height: 100vh;
-     width: 100%;
-     margin: auto;
-     background-color: rgba(0, 0, 0, 0.795);
+#articleContainer {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.795);
 }
 
 #articleContainerBTN {
-     width: 100%;
-     height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-#moonArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgb(29, 29, 29);
+#moonArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(29, 29, 29);
 }
-#mercuryArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgb(85, 85, 85);
+#mercuryArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(85, 85, 85);
 }
-#marsArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid red;
-     
-}
-
-#venusArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgba(220, 190, 70, 0.844);
-     
-}
-#earthArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgb(0, 63, 223);
-}
-#neptuneArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgb(17, 106, 174);
-}
-#uranusArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgb(75, 167, 224);
-}
-#saturnArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgb(201, 198, 100);
-}
-#jupiterArticle{
-     visibility: hidden;
-     margin: auto;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 1000px;
-     width: 1550px;
-     border-radius: 20px;
-     background-color: rgb(0, 0, 0);
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     border: 5px solid rgb(222,177,100,.844);
-}
-#sunArticle{
-      visibility: hidden;
-      margin: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 1000px;
-      width: 1550px;
-      border-radius: 20px;
-      background-color: rgb(0, 0, 0);
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      border: 5px solid rgb(244, 235, 0 , 0.844);
+#marsArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid red;
 }
 
-
-#moon_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#venusArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgba(220, 190, 70, 0.844);
+}
+#earthArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(0, 63, 223);
+}
+#neptuneArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(17, 106, 174);
+}
+#uranusArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(75, 167, 224);
+}
+#saturnArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(201, 198, 100);
+}
+#jupiterArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(222, 177, 100, 0.844);
+}
+#sunArticle {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1550px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(244, 235, 0, 0.844);
 }
 
-#mercury_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#moon_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#mars_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#mercury_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#venus_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#mars_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#earth_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#venus_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#neptune_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#earth_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#uranus_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#neptune_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#saturn_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#uranus_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#jupiter_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#saturn_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-#sun_video{
-     display: flex;
-     flex-wrap: wrap;
-     width: 1500px;
-     margin: auto;
+#jupiter_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
-
-#bottom_info{
-     text-align: center;
-     color: white;
-     margin: auto;
+#sun_video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
 }
 
+#bottom_info {
+  text-align: center;
+  color: white;
+  margin: auto;
+}
 
+@media (min-width: 2200px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
+  body {
+    margin: auto;
+    height: auto;
+    width: 2100px;
+    background-color: black;
+    overflow-x: hidden;
+  }
 
+  h1,
+  h2 {
+    color: white;
+    text-align: center;
+  }
 
+  button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
 
+  button:hover {
+    border: 2px dashed rgba(255, 255, 255, 0.324);
+    border-radius: 50px;
+  }
 
+  #wrapper {
+    margin: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
 
+  #SOL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding-top: 150px;
+  }
 
+  #title {
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    font-style: bold;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    height: 1px;
+    width: 75%;
+  }
 
+  #moon_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+  }
 
+  #mercury_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+  }
 
-@media (min-width: 2800px) {
+  #venus_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+  }
 
-     html{
-          width: 100%;
-          overflow-x: hidden;
-     }
-     
-     body{
-          margin: auto;
-          height: auto;
-          width: 60%;
-          background-color: black;
-          overflow-x: hidden;
-     }
-     
-     h1,h2{
-          color: white;
-          text-align: center;
-     }
-     
-     button{
-          background-color: rgba(0, 0, 0, 0);
-          border: none
-          ;
-     }
-     
-     button:hover{
-          border: 2px dashed rgba(255, 255, 255, 0.324);
-          border-radius: 50px;
-     }
-     
-     
-     #wrapper {
-          
-          margin: auto;
-          width: 100%;
-          background-color: rgb(0, 0, 0);
-     }
-     
-     #SOL {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin: auto;
-          text-align: center;
-          align-items: center;
-          padding-top: 150px;
-     }
-     
-     #title{
-          margin: auto;
-          text-align: center;
-          font-size: larger;
-          font-style: bold;
-          color: rgb(255, 255, 255);
-          padding-top: 10px;
-          padding-bottom: 100px;
-          height: 1px;
-          width: 75%;
-     }
-     
-     #moon_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 200px;
-          width: 200px;
-     }
-     
-     #mercury_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 200px;
-          width: 200px;
-     }
-     
-     #venus_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 200px;
-          width: 200px;
-     }
-     
-     #earth_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 200px;
-          width: 200px;
-     }
-     
-     #mars_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 200px;
-          width: 200px;
-     }
-     
-     #jupiter_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 300px;
-          width: 300px;
-     }
-     
-     #saturn_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 300px;
-          width: 300px;
-     }
-     
-     #uranus_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 225px;
-          width: 225px;
-     }
-     
-     #neptune_div {
-          margin: auto;
-          text-align: center;
-          align-content: center;
-          height: 225px;
-          width: 225px;
-     }
-     
-     #sunAlone{
-          display: flex;
-          justify-content: center;
-          margin: auto;
-          width: 100%;
-     }
-     
-     #sun_div {
-          margin: auto;
-          height: 1800px;
-          width: 1800px;
-     }
-     
-     #nn{
-          position: relative;
-          text-align: center;
-          margin: auto;
-          color: red;
-          padding-top: 20px;
-     }
+  #earth_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #mars_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #jupiter_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  #saturn_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  #uranus_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 225px;
+    width: 225px;
+  }
+
+  #neptune_div {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 225px;
+    width: 225px;
+  }
+
+  #sunAlone {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  #sun_div {
+    margin: auto;
+    height: 1800px;
+    width: 1800px;
+  }
+
+  #nn {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1600px) {
+  video {
+    width: 1000px;
+    height: 500px;
+  }
+
+  #articleContainer {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.795);
+  }
+
+  #articleContainerBTN {
+    width: 100%;
+    height: 100%;
+  }
+
+  #moonArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(29, 29, 29);
+  }
+
+  #mercuryArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(85, 85, 85);
+  }
+  #marsArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid red;
+  }
+
+  #venusArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgba(220, 190, 70, 0.844);
+  }
+  #earthArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(0, 63, 223);
+  }
+  #neptuneArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(17, 106, 174);
+  }
+  #uranusArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(75, 167, 224);
+  }
+  #saturnArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(201, 198, 100);
+  }
+  #jupiterArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(222, 177, 100, 0.844);
+  }
+  #sunArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(244, 235, 0, 0.844);
+  }
+
+  #moon_video,
+  #mercury_video,
+  #mars_video,
+  #venus_video,
+  #earth_video,
+  #neptune_video,
+  #uranus_video,
+  #saturn_video,
+  #jupiter_video,
+  #sun_video {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  video {
+    width: 500px;
+    height: 250px;
+  }
+
+  #articleContainer {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.795);
+  }
+
+  #articleContainerBTN {
+    width: 100%;
+    height: 100%;
+  }
+
+  #moonArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(29, 29, 29);
+  }
+
+  #mercuryArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(85, 85, 85);
+  }
+  #marsArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid red;
+  }
+
+  #venusArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgba(220, 190, 70, 0.844);
+  }
+  #earthArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(0, 63, 223);
+  }
+  #neptuneArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(17, 106, 174);
+  }
+  #uranusArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(75, 167, 224);
+  }
+  #saturnArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(201, 198, 100);
+  }
+  #jupiterArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(222, 177, 100, 0.844);
+  }
+  #sunArticle {
+    overflow-x: hidden;
+    visibility: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 5px solid rgb(244, 235, 0, 0.844);
+  }
+
+  #moon_video,
+  #mercury_video,
+  #mars_video,
+  #venus_video,
+  #earth_video,
+  #neptune_video,
+  #uranus_video,
+  #saturn_video,
+  #jupiter_video,
+  #sun_video {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
 }
